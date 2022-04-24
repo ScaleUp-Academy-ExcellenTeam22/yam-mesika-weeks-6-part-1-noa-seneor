@@ -1,12 +1,14 @@
 import time
 
 
-def timer(f, *args, **kwargs):
+def timer(f, *args, **kwargs) -> float:
     """
+    Function that receive a function and other parameters and measure how long it takes
+    for the function to run with those parameters
     :param f: function
     :param args: unlimited arguments by location
     :param kwargs: unlimited arguments by name
-    :return: execution time of function f to parameters inserted
+    :return: execution time of function f
     """
     starting_time = time.time()
     f(*args, **kwargs)
