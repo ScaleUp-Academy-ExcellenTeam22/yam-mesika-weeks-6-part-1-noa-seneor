@@ -1,16 +1,11 @@
-def my_filter(func, lst):
+def my_filter(func, iterable):
     """
-    function implementing filter using tail recursion
+    Function implementing filter
     :param func: boolean function
-    :param lst: list
-    :return: list with only the elements from lst that func return True for them
+    :param iterable: iterable
+    :return: list with only the elements of iterable for wich the function returns True
     """
-    def tail_filter(function, lst1, lst2):
-        if not len(lst1):
-            return lst2
-        if function(lst1[0]):
-            lst2 += [lst1[0]]
-        return tail_filter(function, lst1[1::], lst2)
-    return tail_filter(func, lst, [])
+    return [element for element in iterable if func(element)]
+
 
 
