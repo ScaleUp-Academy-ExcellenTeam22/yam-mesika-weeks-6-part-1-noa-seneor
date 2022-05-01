@@ -2,6 +2,7 @@ from itertools import product
 
 
 def full_names(first, last, min_length=0):
+    
     """
     Function that receives a list of first names and a list of last names
     and return all unique combinations of firstnames and lastnames in a list
