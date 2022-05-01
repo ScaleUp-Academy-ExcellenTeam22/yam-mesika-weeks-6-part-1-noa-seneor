@@ -2,6 +2,7 @@ import time
 
 
 def timer(f, *args, **kwargs) -> float:
+    
     """
     Function that receive a function and other parameters and measure how long it takes
     for the function to run with those parameters
