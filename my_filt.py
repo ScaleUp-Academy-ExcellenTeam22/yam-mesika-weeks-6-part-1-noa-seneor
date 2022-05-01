@@ -1,4 +1,5 @@
 def my_filter(func, iterable):
+    
     """
     Function implementing filter
     :param func: boolean condition function
