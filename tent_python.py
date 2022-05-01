@@ -2,6 +2,7 @@ from functools import reduce
 
 
 def get_letters():
+    
     """
     :return: list of all letters between a to z , and between A to Z using chr and ord
     """
